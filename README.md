@@ -20,6 +20,7 @@ FinSight AI Copilot, a Python-based financial analysis tool, enables users to qu
 
 # Snippets
 
+## Executive Dashboard
 ![Executive Dashboard](https://github.com/Hshah168/FinSight-AI-Copilot/blob/master/images/Executive%20dashboard/Dashboard%20picture%201.png)
 
 ![Executive Dashboard](https://github.com/Hshah168/FinSight-AI-Copilot/blob/master/images/Executive%20dashboard/Dashboard%20picture%202.png)
@@ -28,8 +29,10 @@ FinSight AI Copilot, a Python-based financial analysis tool, enables users to qu
 
 ![Executive Dashboard](https://github.com/Hshah168/FinSight-AI-Copilot/blob/master/images/Executive%20dashboard/Dashboard%20picture%204.png)
 
+## Ask AI
 ![Ask AI](https://github.com/Hshah168/FinSight-AI-Copilot/blob/master/images/Ask%20AI/AI%20pic%201.png)
 
+## Raw Data
 ![Raw Data](https://github.com/Hshah168/FinSight-AI-Copilot/blob/master/images/Raw%20Data/Data%20pic%201.png)
 
 ![Raw Data](https://github.com/Hshah168/FinSight-AI-Copilot/blob/master/images/Raw%20Data/Data%20pic%202.png)
