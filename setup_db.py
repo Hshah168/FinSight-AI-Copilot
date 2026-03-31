@@ -49,6 +49,27 @@ with engine.connect() as conn:
         period TEXT, forecast_value REAL, model_used TEXT, created_at TEXT
     )'''))
 
+    _ = conn.execute(text('''CREATE TABLE IF NOT EXISTS ai_sessions (
+        session_id TEXT, timestamp TEXT, date TEXT, week TEXT,
+        employee_id TEXT, department TEXT, product TEXT,
+        ai_tool TEXT, model TEXT, provider TEXT, task_type TEXT,
+        input_tokens INTEGER, output_tokens INTEGER, total_tokens INTEGER,
+        cost_usd REAL, time_saved_hrs REAL,
+        value_generated REAL, roi_ratio REAL
+    )'''))
+
+    _ = conn.execute(text('''CREATE TABLE IF NOT EXISTS ai_daily_cost (
+        date TEXT, department TEXT, daily_cost REAL,
+        sessions INTEGER, tokens INTEGER,
+        monthly_budget REAL, cumulative_cost REAL, budget_used_pct REAL
+    )'''))
+
+    _ = conn.execute(text('''CREATE TABLE IF NOT EXISTS ai_alerts (
+        alert_id TEXT, date TEXT, department TEXT,
+        alert_type TEXT, threshold_pct REAL, actual_pct REAL,
+        cumulative_cost REAL, monthly_budget REAL, overspend REAL
+    )'''))
+
     conn.commit()
 
 print('=' * 60)

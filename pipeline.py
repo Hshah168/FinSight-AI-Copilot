@@ -10,6 +10,9 @@ FILES = {
     'uploads/traxovian_expenses.csv':           'expenses',
     'uploads/traxovian_payroll.csv':            'payroll',
     'uploads/traxovian_budget_vs_actual.csv':   'budget_vs_actual',
+    'uploads/traxovian_ai_sessions.csv':          'ai_sessions',
+    'uploads/traxovian_ai_alerts.csv':            'ai_alerts',
+    'uploads/traxovian_ai_daily.csv':             'ai_daily_cost',
 }
 
 def run_pipeline():
